@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- LOGIN + REGISTER PAGE CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+</head>
+
+<body class="auth-body">
+    <div class="auth-box">
+        <h2>Login</h2>
+
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category, msg in messages %}
+                    <p style="color:red; text-align:center;">{{ msg }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('auth.login') }}">
+            <label>Email or Username</label>
+            <input type="text" name="email_or_username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+            <div class="auth-bottom-text">
+                Don't have an account?
+                <a href="{{ url_for('auth.register') }}">Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

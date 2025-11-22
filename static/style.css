@@ -1,0 +1,89 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font_weight: 600;
+    background: linear-gradient(120deg, #4c6ef5, #15aabf);
+    background-attachment: fixed;   /* Optional: keeps gradient fixed on scroll */
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+
+}
+
+h1, h2 {
+    text-align: center;
+    color: Black;
+}
+
+.form-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30);
+}
+
+.result {
+    background-color: #e8f1ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.data {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data th, .data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.data th {
+    background-color: #0078D7;
+    color: white;
+}
+
+background-color: #e8f1ff;
+padding: 10px 20px;
+border-radius: 8px;
+box-shadow: 0 0 20px rgba(0,0,0,0.30);
+display: inline-block;
+
+}
+

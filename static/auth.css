@@ -1,0 +1,78 @@
+/* static/auth.css — isolated styles for login & register pages */
+
+/* scoped root so it only applies when you add class="auth-body" to <body> */
+body.auth-body {
+  background: linear-gradient(135deg, #4c6ef5, #15aabf);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* card */
+body.auth-body .auth-box {
+  width: 380px;
+  max-width: calc(100% - 40px);
+  background: #fff;
+  padding: 36px 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.50);
+}
+
+/* heading */
+body.auth-body .auth-box h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #0f172a;
+  text-align: center;
+}
+
+/* flash messages */
+body.auth-body .auth-box .flash { margin-bottom:10px; padding:8px; border-radius:8px; text-align:center; }
+body.auth-body .auth-box .flash.success { background:#ecfdf5; color:#065f46; }
+body.auth-body .auth-box .flash.warning { background:#fff7ed; color:#92400e; }
+body.auth-body .auth-box .flash.danger  { background:#fee2e2; color:#9b1c1c; }
+
+/* labels & inputs */
+body.auth-body .auth-box label { display:block; margin-top:8px; margin-bottom:6px; color:#444; font-weight:600; }
+body.auth-body .auth-box input[type="text"],
+body.auth-body .auth-box input[type="email"],
+body.auth-body .auth-box input[type="password"],
+body.auth-body .auth-box textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:14px;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  background:#fff;
+  font-size:14px;
+  outline:none;
+  transition: box-shadow .18s, border-color .18s;
+}
+body.auth-body .auth-box input:focus { border-color:#4c6ef5; box-shadow:0 6px 18px rgba(76,110,245,0.08); }
+
+/* submit button */
+body.auth-body .auth-box button {
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  background:linear-gradient(180deg,#4c6ef5,#364fc7);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:6px;
+}
+body.auth-body .auth-box button:hover { transform:translateY(-1px); box-shadow:0 6px 18px rgba(54,79,199,0.16); }
+
+/* bottom link */
+body.auth-body .auth-bottom-text { text-align:center; margin-top:12px; color:#6b7280; }
+body.auth-body .auth-bottom-text a { color:#4c6ef5; text-decoration:none; font-weight:700; }
+
+/* responsive tweaks */
+@media (max-width:420px) {
+  body.auth-body .auth-box { padding:26px 18px; border-radius:10px; }
+  body.auth-body .auth-box h2 { font-size:20px; }
+}

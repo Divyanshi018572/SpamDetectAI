@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Spam Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>📧 Email Spam Classifier</h1>
+
+    <form action="/predict" method="post" class="form-section">
+        <textarea name="email" rows="6" placeholder="Enter your email text here..."></textarea><br>
+        <button type="submit">Check Spam</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <h3>Result: {{ prediction }}</h3>
+            <p>Confidence: {{ confidence }}%</p>
+        </div>
+    {% endif %}
+
+    <hr>
+
+    <h2>📁 Upload File for Bulk Classification</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data" class="form-section">
+        <input type="file" name="file" accept=".csv, .xlsx, .txt">
+        <button type="submit">Upload & Classify</button>
+    </form>
+</div>
+</body>
+</html>
