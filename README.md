@@ -64,16 +64,16 @@
 ### 3. Text preprocessing & normalization
 
 ## 🔹 Frontend
-### HTML
+### 1. HTML
 
-### CSS
+### 2. CSS
 
-### Jinja2 Templates
+### 3. Jinja2 Templates
 
 ## 🔹 Other Tools
-### dotenv for secret key
+### 1. dotenv for secret key
 
-### Session management
+### 2. Session management
 
 # 🚀 How to Use
 ### Register or Login to access the system
