@@ -14,61 +14,63 @@
 ### ✔️ Preprocesses text intelligently
 
 # 🔐 User Authentication
-### Register new users
+### 1. Register new users
 
-### Login with username/email
+### 2. Login with username/email
 
-### Secure password hashing
+### 3. Secure password hashing
 
-### Logout functionality
+### 4.Logout functionality
 
-### Route protection (non‑logged users cannot access the main app)
+### 5.Route protection (non‑logged users cannot access the main app)
 
-### Stores all user info securely in SQLite database
+### 6. Stores all user info securely in SQLite database
 
 # 🗂 Bulk File Classification
-### Upload large datasets
+### 1. Upload large datasets
 
-### Cleans and extracts meaningful text
+### 2. Cleans and extracts meaningful text
 
-### Auto‑detects file encoding
+### 3. Auto‑detects file encoding
 
-### Shows results in a clean HTML table
+### 4. Shows results in a clean HTML table
 
 # 🛠 Additional Features
-### Debug logs for troubleshooting
+### 1. Debug logs for troubleshooting
 
-### Error handling for invalid file types
+### 2. Error handling for invalid file types
 
-### Smooth session management
+### 3. Smooth session management
 
 # 🧠 Technologies Used
 ## 🔹 Backend
-### Python (Flask Framework)
+### 1. Python (Flask Framework)
 
-### SQLite Database
+### 2. SQLite Database
 
-### Werkzeug Security
+### 3. Werkzeug Security
 
-### Pickle (for ML model loading)
+### 4. Pickle (for ML model loading)
 
-### Pandas for file handling
+### 5. Pandas for file handling
 
-##🔹 Machine Learning
-### TF‑IDF Vectorizer
+## 🔹 Machine Learning
+### 1. TF‑IDF Vectorizer
 
-### Logistic Regression (or your trained ML model)
+### 2. Logistic Regression (or your trained ML model)
 
-### Text preprocessing & normalization
+### 4. Naive Bayes Algorithm (MultinomicalNB, BernoulliNB, GaussianNB)
 
-##🔹 Frontend
+### 3. Text preprocessing & normalization
+
+## 🔹 Frontend
 ### HTML
 
 ### CSS
 
 ### Jinja2 Templates
 
-##🔹 Other Tools
+## 🔹 Other Tools
 ### dotenv for secret key
 
 ### Session management
@@ -84,5 +86,5 @@
 
 ### View results in a clean, easy‑to‑read table
 
-Logout securely when done
+
 
